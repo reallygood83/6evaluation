@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // 과목 카드 클릭 시 상세 정보 표시 기능
-    const subjectCards = document.querySelectorAll('.subject-card');
+    const subjectCards = document.querySelectorAll('.subject-card:not(.notion-link)');
     const subjectDetails = document.querySelectorAll('.subject-detail');
     
     // 첫 번째 과목 카드와 상세 정보를 기본으로 활성화
@@ -75,7 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function setupResponsiveFeatures() {
         if (window.innerWidth <= 768) {
             // 모바일 화면에서는 과목 카드 클릭 시 스크롤을 상세 정보로 이동
-            subjectCards.forEach(card => {
+            const mobileSubjectCards = document.querySelectorAll('.subject-card:not(.notion-link)');
+            mobileSubjectCards.forEach(card => {
                 card.addEventListener('click', () => {
                     const subjectDetails = document.querySelector('.subject-details');
                     subjectDetails.scrollIntoView({ behavior: 'smooth' });
