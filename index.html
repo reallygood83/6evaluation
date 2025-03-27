@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6학년 1학기 성장중심평가 계획</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>6학년 1학기 성장중심평가 계획</h1>
+            <p class="subtitle">우리 아이의 성장을 함께 응원합니다</p>
+        </header>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-view="subject">과목별 보기</button>
+            <button class="tab-btn" data-view="timeline">시기별 보기</button>
+        </div>
+        
+        <div class="content-area">
+            <!-- 과목별 보기 -->
+            <div class="view-content active" id="subject-view">
+                <div class="subjects">
+                    <div class="subject-card" data-subject="korean">
+                        <div class="subject-icon"><i class="fas fa-book"></i></div>
+                        <h3>국어</h3>
+                    </div>
+                    <div class="subject-card" data-subject="math">
+                        <div class="subject-icon"><i class="fas fa-calculator"></i></div>
+                        <h3>수학</h3>
+                    </div>
+                    <div class="subject-card" data-subject="social">
+                        <div class="subject-icon"><i class="fas fa-globe-asia"></i></div>
+                        <h3>사회</h3>
+                    </div>
+                    <div class="subject-card" data-subject="science">
+                        <div class="subject-icon"><i class="fas fa-flask"></i></div>
+                        <h3>과학</h3>
+                    </div>
+                    <div class="subject-card" data-subject="english">
+                        <div class="subject-icon"><i class="fas fa-language"></i></div>
+                        <h3>영어</h3>
+                    </div>
+                    <div class="subject-card" data-subject="arts">
+                        <div class="subject-icon"><i class="fas fa-palette"></i></div>
+                        <h3>예체능</h3>
+                    </div>
+                </div>
+                
+                <div class="subject-details">
+                    <div class="subject-detail" id="korean-detail">
+                        <h2>국어 성장중심평가 계획</h2>
+                        <div class="assessment-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>단원</th>
+                                        <th>평가 시기</th>
+                                        <th>평가 내용</th>
+                                        <th>평가 방법</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1. 비유적 표현</td>
+                                        <td>3월 말</td>
+                                        <td>비유적 표현의 효과 파악하기</td>
+                                        <td>서술형 평가</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. 토의하기</td>
+                                        <td>4월 중순</td>
+                                        <td>토의에 참여하기</td>
+                                        <td>수행평가(관찰)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. 글의 구조와 요약</td>
+                                        <td>5월 초</td>
+                                        <td>글의 구조 파악하여 요약하기</td>
+                                        <td>서술형 평가</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- 다른 과목 상세 내용 (추후 내용 추가) -->
+                    <div class="subject-detail" id="math-detail">
+                        <h2>수학 성장중심평가 계획</h2>
+                        <!-- 수학 과목 상세 내용 -->
+                    </div>
+                    
+                    <div class="subject-detail" id="social-detail">
+                        <h2>사회 성장중심평가 계획</h2>
+                        <!-- 사회 과목 상세 내용 -->
+                    </div>
+                    
+                    <div class="subject-detail" id="science-detail">
+                        <h2>과학 성장중심평가 계획</h2>
+                        <!-- 과학 과목 상세 내용 -->
+                    </div>
+                    
+                    <div class="subject-detail" id="english-detail">
+                        <h2>영어 성장중심평가 계획</h2>
+                        <!-- 영어 과목 상세 내용 -->
+                    </div>
+                    
+                    <div class="subject-detail" id="arts-detail">
+                        <h2>예체능 성장중심평가 계획</h2>
+                        <!-- 예체능 과목 상세 내용 -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 시기별 보기 -->
+            <div class="view-content" id="timeline-view">
+                <div class="timeline">
+                    <div class="timeline-container">
+                        <div class="timeline-item" data-month="3">
+                            <div class="timeline-month">3월</div>
+                            <div class="timeline-content">
+                                <h3>3월 평가 계획</h3>
+                                <ul>
+                                    <li><strong>국어:</strong> 비유적 표현의 효과 파악하기 (서술형)</li>
+                                    <li><strong>수학:</strong> 분수의 나눗셈 (서술형)</li>
+                                    <li><strong>사회:</strong> 지리정보 활용하기 (수행평가)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-month="4">
+                            <div class="timeline-month">4월</div>
+                            <div class="timeline-content">
+                                <h3>4월 평가 계획</h3>
+                                <ul>
+                                    <li><strong>국어:</strong> 토의에 참여하기 (수행평가)</li>
+                                    <li><strong>과학:</strong> 식물의 구조와 기능 (실험관찰)</li>
+                                    <li><strong>영어:</strong> 의사소통하기 (관찰평가)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 추가 월별 내용 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>성장중심평가는 학생의 배움과 성장을 돕기 위한 평가입니다.</p>
+            <p>질문이나 상담이 필요하시면 담임교사에게 연락해 주세요.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
