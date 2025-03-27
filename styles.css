@@ -290,4 +290,99 @@ footer {
     .subtitle {
         font-size: 1rem;
     }
+}
+
+/* 예체능 및 기타 과목 스타일 */
+.sub-title {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin: 30px 0 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed var(--primary-color);
+}
+
+/* 첫 번째 sub-title에는 상단 마진 줄이기 */
+.sub-title:first-of-type {
+    margin-top: 10px;
+}
+
+/* 과목별 아이콘 색상 */
+.subject-card[data-subject="korean"] .subject-icon i {
+    color: #e74c3c;
+    background-color: rgba(231, 76, 60, 0.1);
+}
+
+.subject-card[data-subject="math"] .subject-icon i {
+    color: #3498db;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.subject-card[data-subject="social"] .subject-icon i {
+    color: #f39c12;
+    background-color: rgba(243, 156, 18, 0.1);
+}
+
+.subject-card[data-subject="science"] .subject-icon i {
+    color: #2ecc71;
+    background-color: rgba(46, 204, 113, 0.1);
+}
+
+.subject-card[data-subject="english"] .subject-icon i {
+    color: #9b59b6;
+    background-color: rgba(155, 89, 182, 0.1);
+}
+
+.subject-card[data-subject="arts"] .subject-icon i {
+    color: #e67e22;
+    background-color: rgba(230, 126, 34, 0.1);
+}
+
+/* 테이블 내 긴 내용에 대한 처리 */
+td {
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+/* 탭 버튼에 마우스 호버 효과 */
+.tab-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 모바일에서 타임라인 항목 스타일 개선 */
+@media (max-width: 768px) {
+    .timeline-content ul {
+        padding-left: 5px;
+    }
+    
+    .timeline-content li {
+        margin-bottom: 15px;
+    }
+}
+
+/* 인쇄 스타일 */
+@media print {
+    body {
+        background-color: white;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .tabs, header, footer {
+        display: none;
+    }
+    
+    .view-content {
+        display: block !important;
+        margin-bottom: 30px;
+    }
+    
+    .subject-detail {
+        display: block !important;
+        break-inside: avoid;
+        margin-bottom: 20px;
+    }
 } 
